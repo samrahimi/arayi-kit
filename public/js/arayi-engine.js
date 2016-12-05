@@ -13,6 +13,11 @@ class Arayi {
 
     //This is why you shouldn't give a fuck about the outcome of your decisions...
     //and also why you should ;)
+    //
+    //Note that while this function (in isolation) is a simple "coin toss" rather than a probability curve  
+    //or Bloch Sphere for collapsing the wave function, over multiple iterations it causes the system 
+    //as a whole to exhibit infinite diversity in terms of possible outcomes while simultaneously approaching 
+    //a "normal" distribution (as the number of iterations approaches infinity). 
     resolve(qubit) {
         //randomly flip a qubit as if collapsing the wave function
         if (Math.random() < 0.5) 
@@ -88,11 +93,12 @@ class Arayi {
     * The main recursion loop - generates an Arayi tree based on 
     * the coefficients and rendering options specified in opts. 
     * 
-    * To start the generator: generateFractal(tree.root)
-    * The final output is an SVG path definition that can be rendered in 
-    * a browser or whatever else you want to do with it 
+    * To start the generator: generateFractal(tree.root, 0). The render method 
+    * The final output is stored in this.svgPath, an array of SVG path strings, with a length equal to 
+    * this.opts.maxLayers
     * 
-    * Call this asynchronously!! TODO: refactor to return a Promise
+    * The render method is an example of calling generateFractal, rendering its output in the browser, 
+    * and applying an optional post-processing function on the resulting DOM.
     * */
     generateFractal(node, currentLayer) {
         if (currentLayer >= this.opts.maxLayers) {
