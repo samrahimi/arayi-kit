@@ -1,0 +1,29 @@
+body {
+  margin:0;
+  padding:0;
+  text-align:center;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: black;
+  color: #eeeeee;
+}
+
+a {
+  color: #00B7FF;
+}
+.instance {
+  stroke-width:0.2;
+  opacity:1
+} 
+
+svg#yin {
+  left:auto;
+  right:auto;
+  margin:0px auto
+}
+svg#yang {
+  left:auto;
+  right:auto;
+  margin:0px auto;
+  transform:rotate(180deg); 
+  filter:invert(100%);
+}
