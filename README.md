@@ -1,6 +1,6 @@
  arayi-kit
 ---------
-
+![Sample Output using angle = 30, cTrue = 1.33, cFalse - 0.67](https://raw.githubusercontent.com/samrahimi/arayi-kit/alpha/public/images/example-output.png)
 
 A Javascript framework for exploring and characterizing the behavior of functions in the Arayi Set.  The Arayi Set is a chaotic fractal with mind-blowing implications, discovered and characterized by Melody Mustaine (github.com/arayi).  This kit allows you to visualize a very small subset of the whole - a symmetrical 2D binary tree that transforms into a probabilistic 3D *graph*  
 
@@ -20,5 +20,3 @@ npm start
 Then browse to http://localhost:3000
 
 Coefficients and parameters are defined in arayi-ui.js, the recursive loop is in arayi-engine.js, and there is the beginning of an equation library in expressions.js that can be used to experiment with different types of series in a clear and modular way... 
-Note that the current rendering implementation uses <svg> DOM functionality in HTML5 and may not be compatible with 
-all browsers. It is currently known to work in Chrome (desktop). 
