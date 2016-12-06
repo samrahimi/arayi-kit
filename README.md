@@ -13,9 +13,9 @@ Much work remains to be done in terms of characterizing the Set more precisely, 
 
 **Installation and Execution**
 
-git clone https://github.com/samrahimi/arayi-kit && cd arayi-kit
-npm install
-npm start
+- git clone https://github.com/samrahimi/arayi-kit && cd arayi-kit
+- npm install
+- npm start
 
 Then browse to http://localhost:3000
 
